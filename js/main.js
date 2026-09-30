@@ -183,7 +183,7 @@ const templates = {
         <div class="projetos-grid">
 
             <article>
-                <img src="imagens/cachorros-edit.png" alt="Cães resgatados pela ONG">
+                <img src="imagens/cachorros-edit.png" alt="Cães resgatados pela ONG" loading="lazy">
 
                 <h2>Resgate Animal</h2>
 
@@ -196,7 +196,7 @@ const templates = {
 
 
             <article>
-                <img src="imagens/gatos-edit.png" alt="Gatos resgatados pela ONG">
+                <img src="imagens/gatos-edit.png" alt="Gatos resgatados pela ONG" loading="lazy">
 
                 <h2>Lar Temporário</h2>
 
@@ -208,7 +208,7 @@ const templates = {
 
 
             <article>
-                <img src="imagens/adocao.jpeg" alt="Mulher adotando cão na campanha de adoção">
+                <img src="imagens/adocao.jpeg" alt="Mulher adotando cão na campanha de adoção" loading="lazy">
                 <h2>Campanha de Adoção</h2>
 
                 <p>
