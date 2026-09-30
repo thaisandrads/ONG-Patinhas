@@ -90,11 +90,11 @@ const templates = {
                     name="nome"
                     id="nome"
                     required
+                    autocomplete="name"
+                    aria-describedby="erroNome"
                     placeholder=" "
                 >
-
-                <p id="erroNome" class="erro-campo"></p>
-
+                <p id="erroNome" class="erro-campo" aria-live="polite"></p>
 
                 <label for="cpf">CPF:</label>
 
@@ -104,10 +104,11 @@ const templates = {
                     id="cpf"
                     required
                     pattern="\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}"
+                    aria-describedby="erroCpf"
                     placeholder=" "
                 >
 
-                <p id="erroCpf" class="erro-campo"></p>
+                <p id="erroCpf" class="erro-campo" aria-live="polite"></p> 
 
 
                 <label for="telefone">Telefone:</label>
@@ -118,10 +119,12 @@ const templates = {
                     id="telefone"
                     required
                     pattern="\\(\\d{2}\\)\\d{5}-\\d{4}"
+                    autocomplete="tel"
+                    aria-describedby="erroTelefone"
                     placeholder=" "
                 >
 
-                <p id="erroTelefone" class="erro-campo"></p>
+                <p id="erroTelefone" class="erro-campo" aria-live="polite"></p>
 
 
                 <label for="cep">CEP:</label>
@@ -132,10 +135,12 @@ const templates = {
                     id="cep"
                     required
                     pattern="\\d{5}-\\d{3}"
+                    autocomplete="postal-code"
+                    aria-describedby="erroCep" 
                     placeholder=" "
                 >
 
-                <p id="erroCep" class="erro-campo"></p>
+                <p id="erroCep" class="erro-campo" aria-live="polite"></p>
 
 
                 <label for="email">E-mail:</label>
@@ -145,16 +150,18 @@ const templates = {
                     name="email"
                     id="email"
                     required
+                    autocomplete="email"
+                    aria-describedby="erroEmail"
                     placeholder=" "
                 >
 
-                <p id="erroEmail" class="erro-campo"></p>
+                <p id="erroEmail" class="erro-campo" aria-live="polite"></p>
 
             </fieldset>
 
             <input type="submit" value="Enviar">
 
-            <p id="mensagem"></p>
+            <p id="mensagem" role="status"></p>
 
         </form>
     `,

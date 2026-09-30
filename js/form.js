@@ -42,14 +42,17 @@ if (salvo) {
             erroNome.textContent = "Digite seu nome completo.";
         } else {
             erroNome.textContent = "";
+            nome.removeAttribute("aria-invalid");
         }
 
 
         if (!cpf.validity.valid) {
             erroCpf.textContent =
                 "Digite um CPF válido. Exemplo: 123.456.789-00";
+            cpf.setAttribute("aria-invalid", "true");
         } else {
             erroCpf.textContent = "";
+            cpf.removeAttribute("aria-invalid");
         }
 
 
@@ -58,21 +61,26 @@ if (salvo) {
                 "Digite um telefone válido. Exemplo: (21)99999-9999";
         } else {
             erroTelefone.textContent = "";
+            telefone.removeAttribute("aria-invalid");
         }
 
 
         if (!cep.validity.valid) {
             erroCep.textContent =
                 "Digite um CEP válido. Exemplo: 20000-000";
+            cep.setAttribute("aria-invalid", "true");
         } else {
             erroCep.textContent = "";
+            cep.removeAttribute("aria-invalid");
         }
 
 
         if (!email.validity.valid) {
             erroEmail.textContent = "Digite um e-mail válido.";
+            email.setAttribute("aria-invalid", "true");
         } else {
             erroEmail.textContent = "";
+            email.removeAttribute("aria-invalid");
         }
 
 
