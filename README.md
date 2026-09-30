@@ -1,5 +1,7 @@
 # ONG Patinhas
 
+Site publicado: https://thaisandrads.github.io/ONG-Patinhas/
+
 Site institucional de uma ONG de resgate animal, com página inicial, formulário de cadastro de doadores e página de projetos.
 
 ## Tecnologias
