@@ -142,6 +142,9 @@ main {
     padding: var(--espaco-6) 0;
 }
 
+#app:focus {
+    outline: none;
+}
 
 /* =========================
    SECTIONS
@@ -350,3 +353,4 @@ footer p {
 
     
 }
+

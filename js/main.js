@@ -218,6 +218,12 @@ const templates = {
    NAVEGAÇÃO SPA
 ========================= */
 
+const titulos = {
+    inicio: "Início | ONG Patinhas",
+    cadastro: "Cadastro | ONG Patinhas",
+    projetos: "Projetos | ONG Patinhas",
+};
+
 function carregarPagina() {
 
     let rota = window.location.hash.replace("#", "");
@@ -231,6 +237,8 @@ function carregarPagina() {
     }
 
     app.innerHTML = templates[rota];
+
+    document.title = titulos[rota];
 
     if (rota === "cadastro") {
         inicializarFormulario();
@@ -248,6 +256,9 @@ function carregarPagina() {
    NAVEGAÇÃO
 ========================= */
 
-window.addEventListener("hashchange", carregarPagina);
+window.addEventListener("hashchange", () => {
+    carregarPagina();
+    app.focus();
+});
 
 carregarPagina();
