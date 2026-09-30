@@ -23,7 +23,10 @@ if (menuToggle && menuLinks) {
             menuToggle.setAttribute("aria-label", "Abrir menu");
             /* Senão → coloque "Abrir menu" */
         }
-
+        menuToggle.setAttribute(
+             "aria-expanded",
+         menuLinks.classList.contains("aberto")
+);
     });
 }
 
@@ -230,6 +233,7 @@ function carregarPagina() {
         menuLinks.classList.remove("aberto");
         menuToggle.setAttribute("aria-label", "Abrir menu");
     }
+    menuToggle.setAttribute("aria-expanded", "false");
 }
 
 
