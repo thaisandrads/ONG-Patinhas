@@ -52,6 +52,14 @@ página e contraste de cores verificado. Pontuação no Lighthouse
 
 Imagens com carregamento lazy e CSS/JS minificados.
 
+## Versionamento
+
+- Branch `main`: versão estável, publicada no GitHub Pages.
+- Branches por tarefa (`feature/acessibilidade`, `feature/otimizacao`, `docs/...`), incorporadas à `main` depois de testadas.
+- Mensagens de commit no padrão `feat:`, `fix:`, `perf:` e `docs:`.
+- Versionamento semântico (MAJOR.MINOR.PATCH) com tags de `v0.1.0` a `v1.0.0`.
+- Histórico das versões no arquivo `CHANGELOG.md`.
+
 ## Autora
 
 Thaís
