@@ -257,13 +257,13 @@ input:not([type="submit"]) {
     width: 100%;
     padding: var(--espaco-3);
     margin-bottom: var(--espaco-2);
-    border: 1px solid var(--cor-border);
+    border: 1px solid var(--cor-text-light);
     border-radius: 8px;
     font-size: var(--tamanho-texto);
 }
 
 input:not([type="submit"]):focus {
-    outline: 2px solid var(--cor-secondary);
+    outline: 3px solid var(--cor-primary-dark);
     border-color: var(--cor-primary);
 }
 
