@@ -93,6 +93,21 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
+.pular-link {
+    position: absolute;
+    left: -9999px;
+    top: var(--espaco-2);
+    background-color: var(--cor-primary-dark);
+    color: var(--cor-white);
+    padding: var(--espaco-2) var(--espaco-3);
+    border-radius: 6px;
+    z-index: 100;
+}
+
+.pular-link:focus {
+    left: var(--espaco-2);
+}
+
 
 /* =========================
    MENU
@@ -130,6 +145,12 @@ nav a:hover {
     cursor: pointer;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--cor-primary-dark);
+    outline-offset: 2px;
+}
 
 /* =========================
    MAIN

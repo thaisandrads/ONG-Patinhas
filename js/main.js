@@ -7,6 +7,15 @@ const menuToggle = document.querySelector(".menu-toggle"); /* Crie uma constante
 const menuLinks = document.querySelector(".menu-links");
 const app = document.querySelector("#app");
 
+const pularLink = document.querySelector(".pular-link");
+
+if (pularLink) {
+    pularLink.addEventListener("click", (evento) => {
+        evento.preventDefault();
+        app.focus();
+    });
+}
+
 if (menuToggle && menuLinks) {
 
     menuToggle.addEventListener("click", () => {
